@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StepOut — Bogor</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">👟</span>
+      <div>
+        <h1>StepOut</h1>
+        <small>Bogor</small>
+      </div>
+    </div>
+    <nav class="actions">
+      <button id="openCart" class="btn outline">🛒 Keranjang <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide">
+        <img src="assets/svg/shoes/hero1.svg" alt="StepOut Hero 1"/>
+        <div class="caption"><h2>Elevate Your Step</h2><p>Elegan hitam, sentuhan emas.</p></div>
+      </div>
+      <div class="hero-slide">
+        <img src="assets/svg/shoes/hero2.svg" alt="StepOut Hero 2"/>
+        <div class="caption"><h2>Run the City</h2><p>Ringan, responsif, siap lari.</p></div>
+      </div>
+      <div class="hero-slide">
+        <img src="assets/svg/shoes/hero3.svg" alt="StepOut Hero 3"/>
+        <div class="caption"><h2>Dress Bold</h2><p>Formal look with golden class.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Produk Terlaris</h2>
+    <div class="carousel" id="topCarousel">
+      <button class="nav prev" id="topPrev">‹</button>
+      <div class="track" id="topTrack"></div>
+      <button class="nav next" id="topNext">›</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="toolbar">
+      <h2 class="section-title">Kategori</h2>
+      <div class="filters">
+        <button class="chip active" data-cat="all">Semua</button>
+        <button class="chip" data-cat="sneakers">Sneakers</button>
+        <button class="chip" data-cat="lari">Sepatu Lari</button>
+        <button class="chip" data-cat="formal">Dress Shoes</button>
+        <button class="chip" data-cat="boots">Boots</button>
+        <button class="chip" data-cat="sandal">Sandal</button>
+        <button class="chip" data-cat="kasual">Sepatu Kasual</button>
+        <button class="chip" data-cat="basket">Sepatu Basket</button>
+        <button class="chip" data-cat="sepakbola">Sepak Bola</button>
+        <button class="chip" data-cat="tenis">Tenis</button>
+      </div>
+    </div>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <section class="container two-col">
+    <div>
+      <h2 class="section-title">Alamat Toko</h2>
+      <p>Jl. Pajajaran No. 99, Bogor, Jawa Barat</p>
+      <p><a href="https://maps.google.com/?q=Jl.+Pajajaran+99,+Bogor" target="_blank" rel="noopener">Lihat di Google Maps</a></p>
+    </div>
+    <div>
+      <h2 class="section-title">Kritik & Saran</h2>
+      <form id="feedbackForm" class="card">
+        <input type="text" id="fbName" placeholder="Nama" required/>
+        <textarea id="fbMsg" placeholder="Tulis masukan kamu..." required></textarea>
+        <button class="btn">Kirim</button>
+        <small id="fbStatus"></small>
+      </form>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Testimoni Pelanggan</h2>
+    <ul id="testiList" class="testi-list"></ul>
+    <form id="testiForm" class="card">
+      <input type="text" id="tName" placeholder="Nama" required/>
+      <textarea id="tMsg" placeholder="Bagikan pengalamanmu..." required></textarea>
+      <button class="btn">Tambah Testimoni</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 StepOut. Made with ♥ in Bogor.</p>
+  </footer>
+
+  <aside id="cartDrawer" class="cart">
+    <div class="cart-header">
+      <h3>Keranjang</h3>
+      <button id="closeCart" class="icon">✕</button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div class="total">Total: <strong id="cartTotal">Rp 0</strong></div>
+      <button id="checkoutBtn" class="btn full">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <button id="closeCheckout" class="icon close">✕</button>
+      <h3>Checkout</h3>
+      <form id="checkoutForm">
+        <input required placeholder="Nama Penerima" id="cName"/>
+        <input required placeholder="No. HP" id="cPhone"/>
+        <textarea required placeholder="Alamat Lengkap" id="cAddr"></textarea>
+        <select id="cPay" required>
+          <option value="">Pilih Metode Pembayaran</option>
+          <option>Transfer Bank</option>
+          <option>QRIS</option>
+          <option>COD</option>
+        </select>
+        <button class="btn full" type="submit">Buat Pesanan</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
