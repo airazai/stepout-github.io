@@ -1,15 +1,15 @@
 // Sample products (10) covering all categories; top sellers limited to 5
 const PRODUCTS = [
-  {id:1, title:'StepOut Prime Sneaker', cat:'sneakers', price:599000, img:'assets/svg/shoes/sneakers.svg', top:true},
-  {id:2, title:'StepOut FlyRun', cat:'lari', price:749000, img:'assets/svg/shoes/lari.svg', top:true},
-  {id:3, title:'StepOut Oxford Elite', cat:'formal', price:899000, img:'assets/svg/shoes/formal.svg', top:true},
+  {id:1, title:'StepOut Prime Sneaker', cat:'sneakers', price:999000, img:'assets/svg/shoes/sneakers.svg', top:true},
+  {id:2, title:'StepOut FlyRun', cat:'lari', price:2749000, img:'assets/svg/shoes/lari.svg', top:true},
+  {id:3, title:'StepOut Oxford Elite', cat:'formal', price:1899000, img:'assets/svg/shoes/formal.svg', top:true},
   {id:4, title:'StepOut TrailBoot', cat:'boots', price:829000, img:'assets/svg/shoes/boots.svg'},
   {id:5, title:'StepOut Glide Sandal', cat:'sandal', price:299000, img:'assets/svg/shoes/sandal.svg'},
-  {id:6, title:'StepOut EasyWalk', cat:'kasual', price:459000, img:'assets/svg/shoes/kasual.svg', top:true},
+  {id:6, title:'StepOut EasyWalk', cat:'kasual', price:859000, img:'assets/svg/shoes/kasual.svg', top:true},
   {id:7, title:'StepOut CourtPro', cat:'basket', price:779000, img:'assets/svg/shoes/basket.svg'},
   {id:8, title:'StepOut Striker Pro', cat:'sepakbola', price:739000, img:'assets/svg/shoes/sepakbola.svg'},
   {id:9, title:'StepOut Ace Tennis', cat:'tenis', price:769000, img:'assets/svg/shoes/tenis.svg'},
-  {id:10, title:'StepOut Street Sneaker', cat:'sneakers', price:529000, img:'assets/svg/shoes/sneakers.svg'}
+  {id:10, title:'StepOut Street Sneaker', cat:'sneakers', price:1600000, img:'assets/svg/shoes/sneakers.svg'}
 ];
 
 // DOM
